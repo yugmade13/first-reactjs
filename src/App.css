@@ -1,38 +1,100 @@
-.App {
-  text-align: center;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Containerbox {
+  width: 1000px;
+  margin: 100px auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Parentbox {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.Photos img {
+  width: 100%;
+}
+
+.Description {
+  padding: 8px;
+}
+
+.Cate {
+  font-size: 18px;
+  font-weight: 600;
+  color: rgb(156, 156, 156);
+}
+
+.Title {
+  font-size: 28px;
+  font-weight: 800;
+  margin-top: 24px;
+}
+
+.Price {
+  font-size: 24px;
+}
+
+.Info {
+  margin-top: 16px;
+  color: grey;
+}
+
+.ButtonAdd {
+  display: inline-block;
+  text-decoration: none;
+  background-color: hotpink;
   color: white;
+  padding: 12px 18px;
+  margin-top: 12px;
+  border-radius: 25px;
 }
 
-.App-link {
-  color: #61dafb;
+.ListBenefits {
+  padding: 10px;
+  margin-left: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.ListBenefits li {
+  padding: 5px;
+  color: grey;
+}
+
+.CustomerReviews {
+  margin-top: 16px;
+}
+
+.Review_Member {
+  width: 80%;
+  padding: 8px 0 4px 8px;
+  display: flex;
+  flex-direction: row;
+}
+
+.Review_Image {
+  width: 45px;
+  height: 45px;
+}
+
+.Review_Info {
+  color: grey;
+  margin-left: 12px;
+}
+
+.Review_Name {
+  color: black;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.Review_Desc {
+  font-size: 12px;
+}
+
+.Review_Date {
+  font-size: 8px;
 }
